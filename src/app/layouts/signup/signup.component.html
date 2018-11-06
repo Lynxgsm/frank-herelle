@@ -1,0 +1,38 @@
+<div class="content">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="center title">INSCRIPTION</h3>
+      <br>
+      <form #f="ngForm">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" class="form-control" placeholder="you@email.com" [(ngModel)]="email"
+            [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" minlength="8" class="form-control" placeholder="*********" [(ngModel)]="password"
+            [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Confirmez votre mot de passe</label>
+          <input type="password" id="confirm_password" minlength="8" class="form-control" placeholder="*********"
+            [(ngModel)]="confirm_password" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="center flex-container">
+          <button *ngIf="loaded" class="btn btn-primary" [disabled]="checkForm()" (click)="signup()">S'inscrire</button>
+          <app-loader *ngIf="!loaded"></app-loader>
+          <br>
+          <p class="full-width animate fadeIn">
+            <ngb-alert [type]="type" *ngIf="loaded && signupBtn" [dismissible]="false">
+              <strong>{{message}}</strong>
+            </ngb-alert>
+          </p>
+        </div>
+        <div class="sign">
+          <button class="btn btn-outline-primary" routerLink="/login">J'ai un compte. Je veux me connecter.</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <img src="" alt="">
+    </div>
+    <div class="col-lg-6">
+      <h3>{{nom}}</h3>
+      <p>{{description}}</p>
+      <p class="prix">{{prix}} <i class="fa fa-euro"></i></p>
+      <div class="row">
+        <div class="col-lg-8">
+          <label for="qte">Quantité</label>
+          <div class="form-group">
+            <input type="number" min="1" max="{{qte}}" id="qte" class="form-control">
+          </div>
+        </div>
+        <div class="col-lg-4 button">
+          <button class="btn btn-outline-primary btn-block">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

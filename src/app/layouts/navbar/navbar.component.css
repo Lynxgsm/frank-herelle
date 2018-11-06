@@ -1,0 +1,23 @@
+.navbar {
+  min-height: 15vh;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+}
+
+
+.nav-item>a {
+  text-transform: uppercase;
+  font-family: "Averta Bold";
+}
+
+.nav-item>a>span {
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  font-family: "GS Medium";
+}
+
+.collapse {
+  transition: .2s;
+}

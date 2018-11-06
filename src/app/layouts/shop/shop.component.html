@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="overlay"></div>
+  <div class="header-stuff">
+    <h1>Boutique</h1>
+    <h5>Les produits officiels de Frank HERELLE</h5>
+  </div>
+</div>
+<div class="container">
+  <ngb-tabset type="pills">
+    <ngb-tab class="nav" *ngFor="let product of products">
+      <ng-template ngbTabTitle><span class="title">{{product.categorie}}</span></ng-template>
+      <ng-template ngbTabContent>
+        <div class="row">
+          <div class="col-lg-4" *ngFor="let p of product.produits">
+            <app-product-card nom="{{p.nom}}" description="{{p.description}}" prix="{{p.prix}}" id="{{p.id}}"></app-product-card>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

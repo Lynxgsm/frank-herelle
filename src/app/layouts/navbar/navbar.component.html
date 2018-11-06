@@ -1,0 +1,40 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-lg">
+  <a class="navbar-brand" routerLink="" routerLinkActive="active">FRANK HERELLE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" (click)="isCollapsed=!isCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="shop" href="" routerLinkActive="active">boutique <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="formation" href="" routerLinkActive="active">formations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="event" href="" routerLinkActive="active">évènements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="" routerLink="coaching" routerLinkActive="active">coaching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="" routerLink="blog" routerLinkActive="active">blog</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" *ngIf="!isConnected">
+        <a class="nav-link btn btn-primary white-text" routerLink="/login">Se connecter</a>
+      </li>
+      <div ngbDropdown class="d-inline-block" *ngIf="isConnected">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>MON COMPTE</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button routerLink="" class="dropdown-item" routerLink="/user">Tableau de bord</button>
+          <button routerLink="" class="dropdown-item">Mes achats</button>
+          <button routerLink="" class="dropdown-item" (click)="signout()">Se déconnecter</button>
+        </div>
+      </div>
+    </ul>
+  </div>
+</nav>

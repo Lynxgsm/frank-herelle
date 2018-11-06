@@ -1,0 +1,34 @@
+<div class="container-fluid content">
+  <div class="row">
+    <div class="col-lg-4 sidenav">
+      <div class="card">
+        <div class="card-body">
+          <h3>Catégories</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" (click)="changePage('dashboard')" [ngClass]="{'active':page==='dashboard'}"><span
+                class="fa fa-dashboard"></span>
+              Tableau de bord</li>
+            <li class="list-group-item" (click)="changePage('profile')" [ngClass]="{'active':page==='profile'}"><span
+                class="fa fa-user"></span> Mon
+              profil</li>
+            <li class="list-group-item" (click)="changePage('cart')" [ngClass]="{'active':page==='cart'}"><span class="fa fa-cart-plus"></span>
+              Mes commandes</li>
+            <li class="list-group-item" (click)="changePage('formation')" [ngClass]="{'active':page==='formation'}"><span
+                class="fa fa-tasks"></span>
+              Mes formations</li>
+            <li class="list-group-item" (click)="changePage('event')" [ngClass]="{'active':page==='event'}"><span class="fa fa-ticket"></span>
+              Mes
+              billets</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-xl-8">
+      <app-user-dashboard *ngIf="page==='dashboard'"></app-user-dashboard>
+      <app-user-profile *ngIf="page==='profile'"></app-user-profile>
+      <app-user-cart *ngIf="page==='cart'"></app-user-cart>
+      <app-user-formation *ngIf="page==='formation'"></app-user-formation>
+      <app-user-event *ngIf="page==='event'"></app-user-event>
+    </div>
+  </div>
+</div>

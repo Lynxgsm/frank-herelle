@@ -1,0 +1,6 @@
+<app-navbar></app-navbar>
+<div class="content" *ngIf="!loaded">
+  <app-loader></app-loader>
+</div>
+<router-outlet class="animate fadeIn" *ngIf="loaded"></router-outlet>
+<app-footer></app-footer>

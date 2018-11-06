@@ -1,0 +1,155 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('../node_modules/bootstrap/dist/css/bootstrap.css');
+@import url('./assets/css/font-awesome/css/font-awesome.css');
+@import url('./assets/css/animate.css');
+
+@font-face {
+  font-family: "GS Regular";
+  src: url('./assets/fonts/googlesans/GoogleSansRegular.ttf');
+}
+
+@font-face {
+  font-family: "GS Bold";
+  src: url('./assets/fonts/googlesans/GoogleSansBold.ttf');
+}
+
+@font-face {
+  font-family: "GS Bold Italic";
+  src: url('./assets/fonts/googlesans/GoogleSansBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: "GS Italic";
+  src: url('./assets/fonts/googlesans/GoogleSansItalic.ttf');
+}
+
+@font-face {
+  font-family: "GS Medium";
+  src: url('./assets/fonts/googlesans/GoogleSansMedium.ttf');
+}
+
+@font-face {
+  font-family: "GS Medium Italic";
+  src: url('./assets/fonts/googlesans/GoogleSansMediumItalic.ttf');
+}
+
+@font-face {
+  font-family: "RS Regular";
+  src: url('./assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+  font-family: "RS Bold";
+  src: url('./assets/fonts/RobotoSlab/RobotoSlab-Bold.ttf');
+}
+
+@font-face {
+  font-family: "RS Light";
+  src: url('./assets/fonts/RobotoSlab/RobotoSlab-Light.ttf');
+}
+
+@font-face {
+  font-family: "RS Thin";
+  src: url('./assets/fonts/RobotoSlab/RobotoSlab-Thin.ttf');
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url('./assets/fonts/averta/Averta.otf');
+}
+
+@font-face {
+  font-family: "Averta Black";
+  src: url('./assets/fonts/averta/Averta_Black.otf');
+}
+
+@font-face {
+  font-family: "Averta Bold";
+  src: url('./assets/fonts/averta/Averta_Bold.otf');
+}
+
+@font-face {
+  font-family: "Averta Thin";
+  src: url('./assets/fonts/averta/Averta_Light.otf');
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Averta Bold";
+}
+
+p,
+label,
+input,
+a,
+ul,
+li {
+  font-family: "Averta";
+}
+
+.btn {
+  border-radius: 0%;
+}
+
+ol.carousel-indicators {
+  bottom: -30px !important;
+}
+
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.carousel-indicators .active {
+  background-color: rgba(233, 233, 233, 1);
+}
+
+.white-text {
+  color: white !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.card,
+input,
+select,
+textarea,
+.alert {
+  border-radius: 0 !important;
+}
+
+
+ul.nav.nav-pills {
+  min-height: 15vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  font-family: "Averta Thin";
+  color: black;
+}
+
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  font-family: "Averta Bold";
+  background-color: #fff;
+  color: black;
+  border-radius: 0;
+  border-bottom: 3px solid #007bff;
+}
+
+.full-width {
+  width: 100%;
+}

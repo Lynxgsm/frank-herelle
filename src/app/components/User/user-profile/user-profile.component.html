@@ -1,0 +1,123 @@
+<div class="card">
+  <div class="card-body">
+    <h3><span class="fa fa-user"></span> Mon profil</h3>
+  </div>
+</div>
+<div class="card mb-2">
+  <div class="card-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xl-6">
+          <h4>Informations personnelles</h4>
+          <div class="form-group">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" class="form-control" [(ngModel)]="prenom">
+          </div>
+          <div class="form-group">
+            <label for="nom">Nom <sup>*</sup></label>
+            <input type="text" id="nom" class="form-control" [(ngModel)]="nom">
+          </div>
+          <div class="form-group">
+            <label for="age">Âge <sup>*</sup></label>
+            <input type="number" id="age" max="130" min="18" class="form-control" [(ngModel)]="age">
+          </div>
+          <div class="form-group">
+            <label for="sexe">Sexe <sup>*</sup></label>
+            <select class="form-control" id="sexe" [(ngModel)]="sexe">
+              <option value="H">Homme</option>
+              <option value="F">Femme</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-block" (click)="updateUserInfo()">Enregistrer les modifications</button>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xl-6">
+          <h4>Informations de connexion</h4>
+          <div class="form-group">
+            <label for="email">Adresse de messagerie</label>
+            <input type="email" id="email" [(ngModel)]="email" class="form-control">
+          </div>
+          <h4>Changer de mot de passe</h4>
+          <div class="form-group">
+            <label for="password">Mot de passe actuel</label>
+            <input type="password" id="password" class="form-control">
+          </div>
+          <div class="container-fluid p-0 m-0">
+            <div class="row p-0 m-0">
+              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xl-6 pl-0 m-0">
+                <label for="new_password">Nouveau mot de passe</label>
+                <input type="password" id="new_password" class="form-control">
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xl-6 pr-0 m-0">
+                <label for="confirm_password">Confirmation</label>
+                <input type="password" id="confirm_password" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="ml-3">Information du compte</h4>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-xl-3">
+            <label for="prenom_facturation">Prénom</label>
+            <input type="text" id="prenom_facturation" class="form-control">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-xl-3">
+            <label for="nom_facturation">Nom</label>
+            <input type="text" id="nom_facturation" class="form-control">
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xl-6 form-group">
+            <label for="entreprise">Nom de l'entreprise (facultatif)</label>
+            <input type="text" id="entreprise" class="form-control">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-xl-3 form-group">
+            <label for="pays">Pays</label>
+            <select class="form-control" id="pays">
+              <option value="france">France</option>
+              <option value="belgique">Belgique</option>
+            </select>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-xl-3 form-group">
+            <label for="ville">Ville</label>
+            <input type="text" id="ville" class="form-control">
+          </div>
+          <div class="col-lg- 3 col-md-6 col-sm-6 col-xs-6 col-xl-3 form-group">
+            <label for="code_postal">Code postal</label>
+            <input type="number" id="code_postal" class="form-control">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-xl-3 form-group">
+            <label for="adresse">Adresse</label>
+            <input type="text" id="adresse" class="form-control">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-xl-4 form-group">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" class="form-control" placeholder="XXXXXXXXXXXXX">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-xl-4 form-group">
+            <label for="adresse_facturation">Adresse de messagerie</label>
+            <input type="email" id="adresse_facturation" class="form-control">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-xl-4 form-group">
+            <label for="confirmation_adresse">Confirmation de votre e-mail</label>
+            <input type="email" id="confirmation_adresse" class="form-control">
+          </div>
+          <div class="ml-3">
+            <br>
+            <button class="btn btn-primary btn-block">Enregistrer les modifications</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4>Moyen de paiement</h4>
+      <button class="btn btn-primary"><span class="fa fa-credit-card"></span> Ajouter une carte</button>
+    </div>
+  </div>
+</div>

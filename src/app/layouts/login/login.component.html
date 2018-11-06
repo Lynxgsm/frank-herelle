@@ -1,0 +1,30 @@
+<div class="content">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="center title">Frank HERELLE</h3>
+      <br>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="form-control" placeholder="you@email.com" [(ngModel)]="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" class="form-control" [(ngModel)]="password" placeholder="*********">
+      </div>
+      <div class="center flex-container">
+        <button *ngIf="loaded" class="btn btn-primary" (click)="login()">Se connecter</button>
+        <app-loader *ngIf="!loaded"></app-loader>
+        <br>
+        <p class="full-width">
+          <ngb-alert [type]="type" *ngIf="loaded" [dismissible]="false">
+            <strong>{{message}}</strong>
+          </ngb-alert>
+        </p>
+        <a href="" routerLink="/signup">Vous avez oublié votre mot de passe? Cliquez ici.</a>
+      </div>
+      <div class="sign">
+        <button class="btn btn-outline-primary" routerLink="/signup">Créer un compte gratuit</button>
+      </div>
+    </div>
+  </div>
+</div>

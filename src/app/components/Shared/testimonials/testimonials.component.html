@@ -1,0 +1,24 @@
+<!-- <div class="container">
+  <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+  <div class="item">
+    <div class="profile-circle" [ngStyle]="{'background': 'url(' + background + ')'}"></div>
+    <blockquote>
+      <p>{{testimonial}}</p>
+    </blockquote>
+    <p class="username">{{username}}</p>
+  </div>
+</div> -->
+
+<div class="container">
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <app-testimonial-item username="John DOE" background="../../../assets/media/formateur.jpeg" testimonial="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil consequatur libero explicabo nam odit quaerat tempore sapiente recusandae. Quibusdam cum eaque modi nesciunt accusantium consequatur amet iure odit? Sed, provident!"></app-testimonial-item>
+    </ng-template>
+    <ng-template ngbSlide>
+      <app-testimonial-item username="John DOE" background="../../../assets/media/formateur.jpeg" testimonial="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil consequatur libero explicabo nam odit quaerat tempore sapiente recusandae. Quibusdam cum eaque modi nesciunt accusantium consequatur amet iure odit? Sed, provident!"></app-testimonial-item>
+    </ng-template>
+    <ng-template ngbSlide>
+      <app-testimonial-item username="John DOE" background="../../../assets/media/formateur.jpeg" testimonial="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil consequatur libero explicabo nam odit quaerat tempore sapiente recusandae. Quibusdam cum eaque modi nesciunt accusantium consequatur amet iure odit? Sed, provident!"></app-testimonial-item>
+    </ng-template>
+  </ngb-carousel>
+</div>

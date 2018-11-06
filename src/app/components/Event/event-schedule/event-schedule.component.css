@@ -1,0 +1,29 @@
+.content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.list-group-item-heading {
+  font-family: "GS Bold" !important;
+  color: darkseagreen;
+  font-size: 2em;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+.list-group-item {
+  font-family: "Averta Bold";
+}

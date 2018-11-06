@@ -1,0 +1,36 @@
+.container-fluid {
+  padding-top: 5vh;
+  color: white;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  line-height: 10px;
+}
+
+
+.icon {
+  max-height: 30px;
+}
+
+
+.col-lg-2 h5 {
+  text-transform: uppercase;
+}
+
+li {
+  font-family: "GS Regular";
+  font-weight: lighter;
+}
+
+.subrow {
+  padding-top: 5vh;
+  border-top: 2px solid rgba(0, 0, 0, .4);
+  padding-bottom: 2vh;
+}

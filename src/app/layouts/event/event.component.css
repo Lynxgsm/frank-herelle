@@ -1,0 +1,56 @@
+.header {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../../assets/media/event2.jpeg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.header-stuff {
+  z-index: 2;
+}
+
+.overlay {
+  top: 0;
+  height: 80vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+
+.header h1 {
+  text-transform: uppercase;
+  font-family: "Averta Black";
+  font-size: 4em;
+}
+
+h2 {
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 90vh;
+}
+
+.main-content {
+  padding: 4vh;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
